@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Wellnessify — Daily readiness score, sleep insights, and AI wellness coaching powered by Apple Health. For iPhone, iPad, and Mac.">
-  <meta name="theme-color" content="#120a08">
-  <meta property="og:title" content="Wellnessify — Readiness, Sleep & AI Coach">
-  <meta property="og:description" content="Know when to train, rest, or recover. Your personal wellness hub powered by Apple Health and Apple Watch.">
+  <meta name="description" content="Wellnessify — a calm daily plan from Apple Health. Readiness, sleep, movement, and an AI coach on iPhone, iPad, and Mac.">
+  <meta name="theme-color" content="#0B1210">
+  <meta property="og:title" content="Wellnessify — Know when to train, rest, or recover">
+  <meta property="og:description" content="A quiet wellness home for Apple Health. Readiness, sleep, and a coach that speaks to your data — on iPhone, iPad, and Mac.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/app-icon-1024.png">
-  <title>Wellnessify — Readiness, Sleep & AI Wellness Coach</title>
+  <title>Wellnessify — Know when to train, rest, or recover</title>
   <link rel="icon" href="assets/app-icon.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/app-icon-1024.png">
   <link rel="stylesheet" href="css/styles.css">
@@ -19,22 +19,23 @@
     <div class="orb orb-1"></div>
     <div class="orb orb-2"></div>
     <div class="orb orb-3"></div>
+    <div class="grain"></div>
   </div>
 
   <header class="site-nav">
     <div class="container nav-inner">
       <a href="#" class="brand">
-        <img src="assets/app-icon.png" alt="" width="40" height="40">
+        <img src="assets/app-icon.png" alt="" width="36" height="36">
         Wellnessify
       </a>
       <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
       <ul class="nav-links">
+        <li><a href="#devices">Devices</a></li>
         <li><a href="#features">Features</a></li>
         <li><a href="#health">Apple Health</a></li>
         <li><a href="#premium">Premium</a></li>
-        <li><a href="#download">Download</a></li>
         <li><a href="privacy.html">Privacy</a></li>
       </ul>
       <a href="#download" class="btn btn-primary btn-sm">Get the App</a>
@@ -43,112 +44,465 @@
 
   <main>
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <div class="eyebrow">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7L12 16.8 5.7 21l2.3-7-6-4.6h7.6L12 2z"/></svg>
-            Launch special — 50% off Premium
-          </div>
-          <h1>Know when to <span>train, rest,</span> or recover</h1>
-          <p class="hero-lead">
-            Wellnessify turns Apple Health into a clear daily plan — readiness score, sleep stages, heart &amp; activity trends, and an AI coach that speaks to <em>your</em> data.
-          </p>
-          <div class="hero-actions">
-            <a href="#download" class="btn btn-primary">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-              Download on the App Store
-            </a>
-            <a href="#features" class="btn btn-ghost">Explore features</a>
-          </div>
-          <div class="hero-badges">
-            <span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              HealthKit private by design
-            </span>
-            <span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-              iPhone · iPad · Mac
-            </span>
-          </div>
+      <div class="container hero-copy reveal">
+        <p class="eyebrow"><i></i> Still Water</p>
+        <h1>Know when to <em>train</em>, rest, or recover.</h1>
+        <p class="hero-lead">Wellnessify turns Apple Health into a calm daily plan — readiness, sleep, movement, and a coach that speaks to your data. The same quiet day on iPhone, iPad, and Mac.</p>
+        <div class="hero-actions">
+          <a href="#download" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            Download on the App Store
+          </a>
+          <a href="#devices" class="btn btn-ghost">See it in motion</a>
         </div>
+        <nav class="device-nav" aria-label="Devices">
+          <a href="#iphone">iPhone</a>
+          <a href="#duo">iPhone Duo</a>
+          <a href="#ipad">iPad</a>
+          <a href="#mac">Mac</a>
+        </nav>
+      </div>
 
-        <div class="phone-wrap reveal">
-          <div class="phone-glow" aria-hidden="true"></div>
-          <div class="phone" role="img" aria-label="Wellnessify app preview">
-            <div class="phone-screen">
-              <div class="phone-notch"></div>
-              <div class="mock-card">
-                <div class="mock-label">Readiness</div>
-                <div class="mock-score">87 <small>/ 100</small></div>
-                <p style="margin:8px 0 0;font-size:0.75rem;color:#30d158;">Ready for moderate training</p>
-                <div class="mock-bar" style="margin-top:12px;"><span></span></div>
-              </div>
-              <div class="mock-card">
-                <div class="mock-label">Today's Highlights</div>
-                <div class="mock-row">
-                  <div class="mock-ring accent">84</div>
-                  <div class="mock-ring blue">7h</div>
-                  <div class="mock-ring orange">6k</div>
+      <div class="stage-viewport" aria-hidden="true">
+        <div class="stage" id="stage">
+          <div class="floor"></div>
+
+          <div class="depth slot-ipad" data-depth="14">
+            <div class="lean lean-ipad">
+              <div class="enter" style="--d:.08s">
+                <div class="float" style="--bob:8s">
+                  <article class="ipad anim">
+                    <div class="bezel">
+                      <span class="ipad-cam"></span>
+                      <div class="glass-screen">
+                        <div class="desk">
+                          <div class="desk-hero" style="background-image:url('assets/scenes/horizon.jpg')">
+                            <div class="desk-copy">
+                              <p class="hello">Good evening,</p>
+                              <p class="name">Maya</p>
+                              <span class="tick"></span>
+                              <p class="tip">Sleep ran long. Keep today steady.</p>
+                            </div>
+                            <div class="ring" style="--end:82">
+                              <svg viewBox="0 0 100 100"><circle class="track" cx="50" cy="50" r="40"/><circle class="progress" cx="50" cy="50" r="40"/></svg>
+                              <div class="ring-num"><strong class="count"></strong><small>ready</small></div>
+                            </div>
+                          </div>
+                          <div class="tiles tiles-4">
+                            <div class="tile sleep"><span>Sleep</span><strong>7h 12m</strong><small>+0.4h</small></div>
+                            <div class="tile move"><span>Move</span><strong>6,420</strong><small>steps</small></div>
+                            <div class="tile mind"><span>Mindful</span><strong>12</strong><small>min</small></div>
+                            <div class="tile water"><span>Water</span><strong>5</strong><small>glasses</small><i class="fill"></i></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
                 </div>
               </div>
-              <div class="mock-card">
-                <div class="mock-label">AI Coach</div>
-                <p style="margin:0;font-size:0.75rem;color:rgba(255,255,255,0.65);">Good morning — sleep was solid. Heart rate is calm. Light activity today?</p>
+            </div>
+          </div>
+
+          <div class="depth slot-mac" data-depth="8">
+            <div class="enter" style="--d:.18s">
+              <div class="float" style="--bob:9.5s">
+                <article class="macbook anim">
+                  <div class="mac-lid">
+                    <span class="mac-cam"></span>
+                    <div class="mac-display">
+                      <div class="os">
+                        <aside class="os-side">
+                          <p class="os-brand">Wellnessify</p>
+                          <span class="on">Home</span>
+                          <span>Insights</span>
+                          <span>Activity</span>
+                          <span>Devices</span>
+                          <span class="os-profile"><i></i> Maya</span>
+                        </aside>
+                        <div class="os-main">
+                          <div class="desk-hero short" style="background-image:url('assets/scenes/fern.jpg')">
+                            <div class="desk-copy">
+                              <p class="hello">Good evening,</p>
+                              <p class="name">Maya</p>
+                              <span class="tick"></span>
+                            </div>
+                            <div class="ring sm" style="--end:82">
+                              <svg viewBox="0 0 100 100"><circle class="track" cx="50" cy="50" r="40"/><circle class="progress" cx="50" cy="50" r="40"/></svg>
+                              <div class="ring-num"><strong class="count"></strong><small>ready</small></div>
+                            </div>
+                          </div>
+                          <div class="week">
+                            <p>This week</p>
+                            <div class="bars">
+                              <i style="--h:46%"></i><i style="--h:62%"></i><i style="--h:40%"></i><i style="--h:78%"></i><i style="--h:70%"></i><i style="--h:88%"></i><i style="--h:58%"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mac-base"><span></span></div>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="depth slot-back" data-depth="22">
+            <div class="lean lean-back">
+              <div class="enter" style="--d:.32s">
+                <div class="float" style="--bob:7.2s">
+                  <article class="iphone anim">
+                    <div class="bezel">
+                      <i class="side silent"></i><i class="side up"></i><i class="side down"></i><i class="side power"></i>
+                      <div class="glass-screen coach-screen">
+                        <img src="assets/scenes/canopy.jpg" alt="">
+                        <div class="scrim heavy"></div>
+                        <div class="island"></div>
+                        <div class="ui coach-ui">
+                          <p class="kicker">Coach</p>
+                          <p class="coach-title">Good evening, Maya.</p>
+                          <div class="bubbles">
+                            <p class="bubble them">Readiness is 82. A moderate session fits.</p>
+                            <p class="bubble me">Should I train?</p>
+                            <p class="bubble them">Yes — keep it easy. Sleep ran long, and your heart rate is calm.</p>
+                          </div>
+                          <div class="composer"><span>Ask about today</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="depth slot-front" data-depth="30">
+            <div class="lean lean-front">
+              <div class="enter" style="--d:.46s">
+                <div class="float" style="--bob:6.4s">
+                  <article class="iphone anim sheen">
+                    <div class="bezel">
+                      <i class="side silent"></i><i class="side up"></i><i class="side down"></i><i class="side power"></i>
+                      <div class="glass-screen">
+                        <img src="assets/scenes/phone-home.jpg" alt="" style="object-position:64% 28%">
+                        <div class="scrim"></div>
+                        <div class="island"></div>
+                        <div class="ui">
+                          <div class="ui-hero">
+                            <div>
+                              <p class="hello">Good evening,</p>
+                              <p class="name">Maya</p>
+                              <span class="tick"></span>
+                              <p class="tip tip-rotate"><span>Sleep was solid. Keep today steady.</span><span>Heart rate is calm. A walk fits.</span></p>
+                            </div>
+                            <div class="ring" style="--end:82">
+                              <svg viewBox="0 0 100 100"><circle class="track" cx="50" cy="50" r="40"/><circle class="progress" cx="50" cy="50" r="40"/></svg>
+                              <div class="ring-num"><strong class="count"></strong><small>ready</small></div>
+                            </div>
+                          </div>
+                          <div class="tiles">
+                            <div class="tile sleep"><span>Sleep</span><strong>7h 12m</strong><small>+0.4h</small></div>
+                            <div class="tile move"><span>Move</span><strong>6,420</strong><small>steps</small></div>
+                            <div class="tile mind"><span>Mindful</span><strong>12</strong><small>min</small></div>
+                            <div class="tile water"><span>Water</span><strong>5</strong><small>glasses</small><i class="fill"></i></div>
+                          </div>
+                          <div class="tabbar"><span class="on">Home</span><span>Insights</span><span>Activity</span><span>Devices</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <p class="stage-caption">iPhone · iPhone Duo · iPad · Mac</p>
+    </section>
+
+    <section id="devices" class="devices">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><i></i> Four screens, one day</p>
+          <h2>The same calm, wherever you open it.</h2>
+          <p>A phone in the hand, two phones side by side, a wider iPad, and the Mac on your desk. Apple Health stays in step through iCloud.</p>
+        </div>
+
+        <article class="showcase reveal" id="iphone">
+          <div class="showcase-grid">
+            <div class="showcase-copy">
+              <p class="device-kicker">iPhone</p>
+              <h2>The day, in your hand.</h2>
+              <p>Open to a readiness score, last night’s sleep, and a short plan. The ring tells you whether to push, stay steady, or recover — before you decide the workout.</p>
+              <ul class="ticks">
+                <li>Readiness from sleep, activity, and resting heart rate</li>
+                <li>Sleep, movement, mindfulness, and water on one screen</li>
+                <li>A tip that follows the time of day</li>
+              </ul>
+            </div>
+            <div class="showcase-stage">
+              <article class="iphone anim sheen" aria-label="Wellnessify on iPhone, showing a readiness score of 82">
+                <div class="bezel">
+                  <i class="side silent"></i><i class="side up"></i><i class="side down"></i><i class="side power"></i>
+                  <div class="glass-screen">
+                    <img src="assets/scenes/phone-home.jpg" alt="" style="object-position:64% 28%">
+                    <div class="scrim"></div>
+                    <div class="island"></div>
+                    <div class="ui">
+                      <div class="ui-hero">
+                        <div>
+                          <p class="hello">Good evening,</p>
+                          <p class="name">Maya</p>
+                          <span class="tick"></span>
+                          <p class="tip tip-rotate"><span>Sleep was solid. Keep today steady.</span><span>Heart rate is calm. A walk fits.</span></p>
+                        </div>
+                        <div class="ring" style="--end:82">
+                          <svg viewBox="0 0 100 100"><circle class="track" cx="50" cy="50" r="40"/><circle class="progress" cx="50" cy="50" r="40"/></svg>
+                          <div class="ring-num"><strong class="count"></strong><small>ready</small></div>
+                        </div>
+                      </div>
+                      <div class="tiles">
+                        <div class="tile sleep"><span>Sleep</span><strong>7h 12m</strong><small>+0.4h</small></div>
+                        <div class="tile move"><span>Move</span><strong>6,420</strong><small>steps</small></div>
+                        <div class="tile mind"><span>Mindful</span><strong>12</strong><small>min</small></div>
+                        <div class="tile water"><span>Water</span><strong>5</strong><small>glasses</small><i class="fill"></i></div>
+                      </div>
+                      <div class="tabbar"><span class="on">Home</span><span>Insights</span><span>Activity</span><span>Devices</span></div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </article>
+
+        <article class="showcase reverse reveal" id="duo">
+          <div class="showcase-grid">
+            <div class="showcase-copy">
+              <p class="device-kicker">iPhone Duo</p>
+              <h2>Home on one. The coach on the other.</h2>
+              <p>Set them side by side. One iPhone holds the day. The other answers in your own numbers — training, sleep, stress, or what to do next.</p>
+              <ul class="ticks">
+                <li>Ask in your own words, or with your voice</li>
+                <li>Answers stay tied to the health data you allow</li>
+                <li>Premium coaching, on the phone you already have</li>
+              </ul>
+            </div>
+            <div class="duo-stage">
+              <div class="lean lean-duo-l">
+                <div class="float" style="--bob:7.5s">
+                  <article class="iphone anim" aria-label="Wellnessify home on the first iPhone">
+                    <div class="bezel">
+                      <i class="side silent"></i><i class="side up"></i><i class="side down"></i><i class="side power"></i>
+                      <div class="glass-screen">
+                        <img src="assets/scenes/phone-alt.jpg" alt="" style="object-position:62% 24%">
+                        <div class="scrim"></div>
+                        <div class="island"></div>
+                        <div class="ui">
+                          <div class="ui-hero">
+                            <div>
+                              <p class="hello">Good morning,</p>
+                              <p class="name">Jonah</p>
+                              <span class="tick"></span>
+                              <p class="tip">A steady start. Room for an easy run.</p>
+                            </div>
+                            <div class="ring" style="--end:76">
+                              <svg viewBox="0 0 100 100"><circle class="track" cx="50" cy="50" r="40"/><circle class="progress" cx="50" cy="50" r="40"/></svg>
+                              <div class="ring-num"><strong class="count"></strong><small>ready</small></div>
+                            </div>
+                          </div>
+                          <div class="tiles">
+                            <div class="tile sleep"><span>Sleep</span><strong>6h 40m</strong><small>−0.3h</small></div>
+                            <div class="tile move"><span>Move</span><strong>8,140</strong><small>steps</small></div>
+                            <div class="tile mind"><span>Mindful</span><strong>8</strong><small>min</small></div>
+                            <div class="tile water"><span>Water</span><strong>3</strong><small>glasses</small><i class="fill" style="--level:42%"></i></div>
+                          </div>
+                          <div class="tabbar"><span class="on">Home</span><span>Insights</span><span>Activity</span><span>Devices</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="lean lean-duo-r">
+                <div class="float" style="--bob:8.4s">
+                  <article class="iphone anim" aria-label="Wellnessify coach on the second iPhone">
+                    <div class="bezel">
+                      <i class="side silent"></i><i class="side up"></i><i class="side down"></i><i class="side power"></i>
+                      <div class="glass-screen coach-screen">
+                        <img src="assets/scenes/canopy.jpg" alt="">
+                        <div class="scrim heavy"></div>
+                        <div class="island"></div>
+                        <div class="ui coach-ui">
+                          <p class="kicker">Coach</p>
+                          <p class="coach-title">Good morning, Jonah.</p>
+                          <div class="bubbles">
+                            <p class="bubble them">Readiness is 76. Sleep was a little short.</p>
+                            <p class="bubble me">Can I still run?</p>
+                            <p class="bubble them">Keep it easy. Thirty minutes, then water. Save the hard session for tomorrow.</p>
+                          </div>
+                          <div class="composer"><span>Ask about today</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="showcase reveal" id="ipad">
+          <div class="showcase-copy center">
+            <p class="device-kicker">iPad</p>
+            <h2>A wider calm.</h2>
+            <p>The week sits beside the day. Trends, the plan, and the readiness ring share one quiet canvas — for the couch, the kitchen, or the desk.</p>
+          </div>
+          <div class="showcase-stage pad-stage">
+            <article class="ipad anim" aria-label="Wellnessify on iPad">
+              <div class="bezel">
+                <span class="ipad-cam"></span>
+                <div class="glass-screen">
+                  <div class="desk">
+                    <div class="desk-hero" style="background-image:url('assets/scenes/horizon.jpg')">
+                      <div class="desk-copy">
+                        <p class="hello">Good evening,</p>
+                        <p class="name">Maya</p>
+                        <span class="tick"></span>
+                        <p class="tip">Sleep ran long. Heart rate is calm. A walk is enough.</p>
+                      </div>
+                      <div class="ring" style="--end:82">
+                        <svg viewBox="0 0 100 100"><circle class="track" cx="50" cy="50" r="40"/><circle class="progress" cx="50" cy="50" r="40"/></svg>
+                        <div class="ring-num"><strong class="count"></strong><small>ready</small></div>
+                      </div>
+                    </div>
+                    <div class="desk-row">
+                      <div class="tiles tiles-4">
+                        <div class="tile sleep"><span>Sleep</span><strong>7h 12m</strong><small>+0.4h</small></div>
+                        <div class="tile move"><span>Move</span><strong>6,420</strong><small>steps</small></div>
+                        <div class="tile mind"><span>Mindful</span><strong>12</strong><small>min</small></div>
+                        <div class="tile water"><span>Water</span><strong>5</strong><small>glasses</small><i class="fill"></i></div>
+                      </div>
+                      <div class="week card">
+                        <p>This week’s steps</p>
+                        <div class="bars tall">
+                          <i style="--h:46%"><b>M</b></i><i style="--h:62%"><b>T</b></i><i style="--h:40%"><b>W</b></i><i style="--h:78%"><b>T</b></i><i style="--h:70%"><b>F</b></i><i style="--h:88%"><b>S</b></i><i style="--h:58%"><b>S</b></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </article>
+
+        <article class="showcase reveal" id="mac">
+          <div class="showcase-copy center">
+            <p class="device-kicker">Mac</p>
+            <h2>Your day, on the desk.</h2>
+            <p>The same home, with a sidebar and room to read the week. Health data arrives through iCloud on the same Apple ID. A cable does not copy it — confirm it in the Health app on Mac first.</p>
+          </div>
+          <div class="showcase-stage mac-stage">
+            <article class="macbook anim" aria-label="Wellnessify on Mac">
+              <div class="mac-lid">
+                <span class="mac-cam"></span>
+                <div class="mac-display">
+                  <div class="os">
+                    <aside class="os-side">
+                      <p class="os-brand"><img src="assets/app-icon.png" alt="" width="22" height="22"> Wellnessify</p>
+                      <span class="on">Home</span>
+                      <span>Insights</span>
+                      <span>Activity</span>
+                      <span>Devices</span>
+                      <span>Settings</span>
+                      <span class="os-profile"><i></i> Maya</span>
+                    </aside>
+                    <div class="os-main">
+                      <div class="desk-hero" style="background-image:url('assets/scenes/fern.jpg')">
+                        <div class="desk-copy">
+                          <p class="hello">Good evening,</p>
+                          <p class="name">Maya</p>
+                          <span class="tick"></span>
+                          <p class="tip">Sleep ran long. Keep the evening easy.</p>
+                        </div>
+                        <div class="ring" style="--end:82">
+                          <svg viewBox="0 0 100 100"><circle class="track" cx="50" cy="50" r="40"/><circle class="progress" cx="50" cy="50" r="40"/></svg>
+                          <div class="ring-num"><strong class="count"></strong><small>ready</small></div>
+                        </div>
+                      </div>
+                      <div class="tiles tiles-4">
+                        <div class="tile sleep"><span>Sleep</span><strong>7h 12m</strong><small>+0.4h</small></div>
+                        <div class="tile move"><span>Move</span><strong>6,420</strong><small>steps</small></div>
+                        <div class="tile mind"><span>Mindful</span><strong>12</strong><small>min</small></div>
+                        <div class="tile water"><span>Water</span><strong>5</strong><small>glasses</small><i class="fill"></i></div>
+                      </div>
+                      <div class="week card">
+                        <p>This week</p>
+                        <div class="bars tall">
+                          <i style="--h:42%"><b>M</b></i><i style="--h:66%"><b>T</b></i><i style="--h:38%"><b>W</b></i><i style="--h:74%"><b>T</b></i><i style="--h:80%"><b>F</b></i><i style="--h:90%"><b>S</b></i><i style="--h:54%"><b>S</b></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mac-base"><span></span></div>
+            </article>
+          </div>
+        </article>
       </div>
     </section>
 
     <section id="features">
       <div class="container">
         <div class="section-head reveal">
-          <h2>Your wellness command center</h2>
-          <p>Everything you need to understand your body — in one beautiful dashboard that syncs with Apple Health.</p>
+          <p class="eyebrow"><i></i> What you see</p>
+          <h2>A quieter command center.</h2>
+          <p>Everything you need to understand the day, drawn from the Apple Health data you choose to share.</p>
         </div>
         <div class="feature-grid">
           <article class="glass feature-card reveal">
-            <div class="feature-icon green">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            <div class="feature-icon sage">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
             </div>
-            <h3>Daily Readiness Score</h3>
-            <p>A 0–100 score from sleep, activity, and resting heart rate so you know when to push or recover.</p>
+            <h3>Daily readiness</h3>
+            <p>A 0–100 score from sleep, activity, and resting heart rate, so you know when to push and when to recover.</p>
           </article>
           <article class="glass feature-card reveal">
-            <div class="feature-icon blue">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <div class="feature-icon night">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
             </div>
-            <h3>Sleep &amp; Recovery</h3>
-            <p>Duration, stages, and trends from Apple Health — see how last night shapes tomorrow.</p>
+            <h3>Sleep and recovery</h3>
+            <p>Duration, stages, and the week behind them. See how last night shapes tomorrow.</p>
           </article>
           <article class="glass feature-card reveal">
-            <div class="feature-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            <div class="feature-icon clay">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
             </div>
-            <h3>Heart &amp; Vitals</h3>
-            <p>Heart rate, blood oxygen, HRV, and 7-day history at a glance.</p>
+            <h3>Heart and vitals</h3>
+            <p>Heart rate, blood oxygen, HRV, and a seven-day history, held in one place.</p>
           </article>
           <article class="glass feature-card reveal">
-            <div class="feature-icon teal">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+            <div class="feature-icon water">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
             </div>
-            <h3>Activity &amp; Goals</h3>
-            <p>Steps, active energy, workouts, and calorie goals with progress rings and trend charts.</p>
+            <h3>Activity and goals</h3>
+            <p>Steps, active energy, workouts, and the targets you set, with the week drawn beside them.</p>
           </article>
           <article class="glass feature-card reveal">
-            <div class="feature-icon pink">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <div class="feature-icon dusk">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
             </div>
-            <h3>Cycle Insights</h3>
-            <p>Phase trends and patterns from Apple Health cycle data. Premium feature.</p>
+            <h3>Cycle insights</h3>
+            <p>Phase and pattern, from Apple Health cycle data. A Premium feature.</p>
           </article>
           <article class="glass feature-card reveal">
-            <div class="feature-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5L12 3z"/><path d="M5 19l1 3 1-3 3-1-3-1-1-3-1 3-3 1 3 1z"/></svg>
+            <div class="feature-icon sage">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3l1.6 4.8L18.5 9.5l-4.9 1.5L12 16l-1.6-5L5.5 9.5l4.9-1.7L12 3z"/></svg>
             </div>
-            <h3>AI Wellness Coach</h3>
-            <p>Ask about sleep, training, nutrition, or stress. Voice input supported. Premium feature.</p>
+            <h3>AI wellness coach</h3>
+            <p>Ask about sleep, training, nutrition, or stress. Voice input included. A Premium feature.</p>
           </article>
         </div>
       </div>
@@ -157,48 +511,26 @@
     <section id="health">
       <div class="container split">
         <div class="reveal">
-          <h2 style="font-size:clamp(1.75rem,3vw,2.25rem);letter-spacing:-0.03em;margin:0 0 14px;">Built for Apple Health &amp; Apple Watch</h2>
-          <p style="color:var(--text-muted);font-size:1.0625rem;margin:0;">
-            Connect once and Wellnessify reads the metrics you allow — heart rate, sleep, steps, workouts, cycle data, and more. On Mac, data syncs through iCloud Health on the same Apple ID.
-          </p>
-          <ul class="split-list">
-            <li>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-              Works with iPhone, Apple Watch, and apps that write to Health
-            </li>
-            <li>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-              Personalized morning, midday &amp; evening reminders
-            </li>
-            <li>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-              Tap the smart ring for a spoken wellness brief
-            </li>
-            <li>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-              You control permissions — revoke anytime in Settings
-            </li>
+          <p class="eyebrow"><i></i> Apple Health</p>
+          <h2>Built for the health data you already keep.</h2>
+          <p class="lead">Connect once. Wellnessify reads the metrics you allow — heart rate, sleep, steps, workouts, cycle data, and more. On Mac, the same Apple ID brings them across through iCloud Health.</p>
+          <ul class="ticks">
+            <li>Works with iPhone, Apple Watch, and apps that write to Health</li>
+            <li>Morning, midday, and evening reminders you can shape</li>
+            <li>Tap the ring for a spoken brief of the day</li>
+            <li>Permissions stay yours. Revoke them any time in Settings</li>
           </ul>
         </div>
-        <div class="glass glass-sm reveal">
-          <h3 style="margin:0 0 16px;font-size:1.125rem;">Works everywhere you do</h3>
-          <div class="platforms" style="justify-content:flex-start;">
-            <span class="platform-pill">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-              iPhone
-            </span>
-            <span class="platform-pill">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/></svg>
-              iPad
-            </span>
-            <span class="platform-pill">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="12" rx="2"/><path d="M6 20h12"/></svg>
-              Mac
-            </span>
+        <div class="glass sync-card reveal">
+          <p class="sync-label">How a day stays in step</p>
+          <div class="sync">
+            <div class="node"><strong>iPhone</strong><span>Apple Health</span></div>
+            <div class="link" aria-hidden="true"><i></i></div>
+            <div class="node"><strong>iCloud</strong><span>Same Apple ID</span></div>
+            <div class="link" aria-hidden="true"><i></i></div>
+            <div class="node"><strong>iPad &amp; Mac</strong><span>Wellnessify</span></div>
           </div>
-          <p style="margin:20px 0 0;font-size:0.875rem;color:var(--text-soft);">
-            Mac reads health data synced via iCloud Health. Confirm your iPhone data appears in the Mac Health app first.
-          </p>
+          <p class="sync-note">Plugging in a cable does not copy Health data. Open Health on Mac and confirm the iPhone data is there, then Wellnessify can read it.</p>
         </div>
       </div>
     </section>
@@ -206,8 +538,9 @@
     <section id="premium">
       <div class="container">
         <div class="glass premium-banner reveal">
-          <h2>Wellnessify Premium</h2>
-          <p>Unlock AI coaching, advanced insights, cycle tracking, and the full wellness experience.</p>
+          <p class="eyebrow"><i></i> Wellnessify Premium</p>
+          <h2>Coaching, cycle insights, and the full plan.</h2>
+          <p>The daily home stays open. Premium adds the coach, deeper insights, and cycle tracking.</p>
           <div class="pricing-row">
             <div class="glass glass-sm price-card">
               <span class="price-badge">50% off launch</span>
@@ -231,14 +564,13 @@
     <section class="cta" id="download">
       <div class="container">
         <div class="glass cta-box reveal">
-          <h2>Start your wellness journey</h2>
-          <p>Download Wellnessify free on the App Store. Connect Apple Health in seconds.</p>
-          <a href="https://apps.apple.com/app/wellnessify/id6779297287" class="btn btn-primary" rel="noopener">
+          <p class="eyebrow"><i></i> Begin</p>
+          <h2>Start with a quieter morning.</h2>
+          <p>Download Wellnessify free. Connect Apple Health, and the day has a shape.</p>
+          <a href="https://apps.apple.com/app/wellnessify/id0000000000" class="btn btn-primary" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
             Download on the App Store
           </a>
-          <p style="margin-top:20px;font-size:0.8125rem;color:var(--text-soft);">
-            Replace the App Store link above with your live URL when the app is published.
-          </p>
         </div>
       </div>
     </section>
@@ -254,7 +586,7 @@
         <ul class="footer-links">
           <li><a href="privacy.html">Privacy Policy</a></li>
           <li><a href="terms.html">Terms of Service</a></li>
-          <li><a href="mailto:privacy@wellnessify.app">Contact</a></li>
+          <li><a href="mailto:wellnessify@hokfam.com">Contact</a></li>
         </ul>
       </div>
       <p class="footer-copy">© <span id="year"></span> Wellnessify. All rights reserved.</p>
